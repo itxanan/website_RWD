@@ -22,15 +22,41 @@
     </style>
       <!--頁頭-->
     <header>
-        <nav class="">
             <div class="container-fluid">
               <a class="navbar-brand" href="#"><h1>AnAn's Blog</h1></a>
               <p>
                 <a href="https://csweb.ntue.edu.tw/" class="text-secondary">國北教資訊科學系</a>
               </p>
             </div>
-          </nav>
         <nav>
+		<style>
+    nav {
+      display: grid; /* 使用 grid 布局 */
+      grid-template-columns: repeat(5, 1fr); /* 分成 5 等分 */
+      gap: 10px; /* 每格間距 */
+      text-align: center; /* 內容置中 */
+    }
+
+    nav a {
+      display: block;
+      padding: 15px 0; /* 調整按鈕內距 */
+      background-color: transparent; /* 背景透明 */
+      color: #54534d; /* 文字顏色 */
+      text-decoration: none; /* 去掉下劃線 */
+      border: 1px solid #54534d; /* 加外框 */
+      border-radius: 10px; /* 圓角外框 */
+      transition: color 0.3s, border-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #54534d; /* 滑鼠移上時背景色變深 */
+      color: #ffffff; /* 文字變白 */
+    }
+
+    nav a:disabled {
+      opacity: 0.5; /* 禁用狀態透明度 */
+    }
+  </style>
             <!-- 一個留框線而已 -->
 		<a href = "#section1" class="btn btn-secondary" disabled>攝影作品</a>
             <a href = "#section2" class="btn btn-secondary" disabled>關於我</a>
