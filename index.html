@@ -11,12 +11,12 @@
   <body>
     <style>
       h2 h1{
-        color: #54534d; /* 設定所有h2的顏色為綠色 */
+        color: #54534d; 
       }
       body {
             font-family: 'Arial', sans-serif;
-            background-color: #D0CBCB; /* 粉紫色背景 */
-            color: #54534d; /* 更改為灰黑色調字體 */
+            background-color: #D0CBCB; 
+            color: #54534d;
             padding-top: 50px;
         }
     </style>
@@ -32,118 +32,20 @@
           </nav>
         <nav>
             <!-- 一個留框線而已 -->
-            <a href = "#section1" class="btn btn-secondary" disabled>關於我</a>
-            <a href = "#section2" class="btn btn-secondary" disabled>學習經歷</a>
-            <a href = "#section3" class="btn btn-secondary" disabled>我的技能</a>
+		<a href = "#section1" class="btn btn-secondary" disabled>攝影作品</a>
+            <a href = "#section2" class="btn btn-secondary" disabled>關於我</a>
+            <a href = "#section3" class="btn btn-secondary" disabled>學習經歷</a>
+            <a href = "#section4" class="btn btn-secondary" disabled>我的技能</a>
             <a href = "#section5" class="btn btn-secondary" disabled>影片作品</a>
-            <a href = "#section5" class="btn btn-secondary" disabled>攝影作品</a>
         </nav>
+	    <hr>
     </header>
 
     <!-- 主內容 -->
     <main>
 
-        <!--關於我-->
+	<!-- 圖片作品 -->
         <article id="section1">
-            <header>
-              <br>
-                <h2> • 關於我</h2>
-                <p>將在這介紹有關於我的學習及生活點滴。</p>
-            </header>
-            <table cellspacing="20">
-                <tr>
-                <td><img src="me.jpg.png" width="100"></td>
-                <td>
-			<h2>胡廷安</h2>
-			<strog><p>資二甲_111216035_胡廷安</p></strog>
-		</td>
-                </tr>
-            </table>
-            <section>
-		    <br>
-                <p>我是國立台北教育大學資訊科學系二年級的學生，我非常<mark>熱愛排球</mark>，並且積極參與系隊活動，不僅提升了自己的體能，也增進了與隊友間的默契與合作能力。在大學生活中，我學習如何使用<mark>VScode 撰寫 HTML 和 Java 程式</mark>，並且在大一時已掌握撰寫<mark>中階 C++</mark>程式的能力。此外，我對於程式設計的熱情驅使我不斷探索新的技術與工具，讓自己能在資訊領域持續進步與成長。</p>
-              </section>
-        </article>
-
-        <!-- 學習經歷 -->
-        <article id="section2">
-            <header class="d-flex align-items-center">
-              <h2 class="me-3"> • 學習經歷</h2>
-              <div class="dropdown">
-                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  各學校官網
-                </button>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="https://www.ntue.edu.tw/">國立台北教育大學</a></li>
-                  <li><a class="dropdown-item" href="https://www.chgsh.chc.edu.tw/">國立彰化女子高級中學</a></li>
-                  <li><a class="dropdown-item" href="#https://www.twjh.chc.edu.tw/">田尾國中</a></li>
-                  <li><a class="dropdown-item" href="#https://www.twps.chc.edu.tw/">田尾國小</a></li>
-                </ul>
-              </div>
-            </header>
-            <p>
-              我高中就讀彰化女中，是一座校風自由且師生互相尊重的高中，在這裡我培育起了我的自信及被身邊同學感染所獲得友愛同儕的熱心腸。而大學我選擇就讀校風純普的國立台北教育大學，在這裡學習到許多異於高中的知識圈，例如撰寫程式等等。
-            </p>
-          
-            <table frame="void">
-                <thead>
-                    <tr>
-                        <th>學習期間</th>
-                        <th>所在單位</th>
-                    </tr>
-                    <tr>
-                        <td>2023-2024</td>
-                        <td>國立台北教育大學</td>
-                    </tr>
-                    <tr>
-                        <td>2019-2022</td>
-                        <td>國立彰化女子高級中學</td>
-                    </tr>
-                    <tr>
-                        <td>2015-2018</td>
-                        <td>田尾國中</td>
-                    </tr>
-                </thead>
-            </table>
-        </article>
-        <br>
-        <!-- 我的技能 -->
-        <article id="section3">
-            <header>
-                <h2> • 我的技能</h2>
-            </header>
-                <table frame="void">
-                    <thead>
-                        <tr>
-                            <td>排球</td>
-                            <td>⭐⭐⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Java</td>
-                            <td>⭐⭐</td>
-                        </tr>
-                        <tr>
-                            <td>Html</td>
-                            <td>⭐</td>
-                        </tr>
-                        <tr>
-                            <td>C++</td>
-                            <td>⭐⭐⭐</td>
-                        </tr>
-                    </thead>
-                </table>
-        </article>
-        <br>
-        <!-- 影片作品 -->
-        <article id="section5">
-          <header>
-            <h2> • 影片分享</h2>
-          </header>
-          <iframe width="300" height="200" src="https://www.youtube.com/embed/eA0lHNZ1KCA?si=Uvw2W0HoJaE_7_QL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>這是我很喜歡的歌曲，想和大家分享。</p>
-        </article>        
-        <!-- 圖片作品 -->
-        <article id="section6">
             <header>
                 <h2> • 攝影作品</h2>
             </header>
@@ -191,7 +93,108 @@
                 height: 500px; /* 設定固定高度 */
               }
             </style>
+        </article>    
+
+        <!--關於我-->
+        <article id="section2">
+            <header>
+              <br>
+                <h2> • 關於我</h2>
+                <p>將在這介紹有關於我的學習及生活點滴。</p>
+            </header>
+            <table cellspacing="20">
+                <tr>
+                <td><img src="me.jpg.png" width="100"></td>
+                <td>
+			<h2>胡廷安</h2>
+			<strog><p>資二甲_111216035_胡廷安</p></strog>
+		</td>
+                </tr>
+            </table>
+            <section>
+		    <br>
+                <p>我是國立台北教育大學資訊科學系二年級的學生，我非常<mark>熱愛排球</mark>，並且積極參與系隊活動，不僅提升了自己的體能，也增進了與隊友間的默契與合作能力。在大學生活中，我學習如何使用<mark>VScode 撰寫 HTML 和 Java 程式</mark>，並且在大一時已掌握撰寫<mark>中階 C++</mark>程式的能力。此外，我對於程式設計的熱情驅使我不斷探索新的技術與工具，讓自己能在資訊領域持續進步與成長。</p>
+              </section>
         </article>
+
+        <!-- 學習經歷 -->
+        <article id="section3">
+            <header class="d-flex align-items-center">
+              <h2 class="me-3"> • 學習經歷</h2>
+              <div class="dropdown">
+                <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  各學校官網
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="https://www.ntue.edu.tw/">國立台北教育大學</a></li>
+                  <li><a class="dropdown-item" href="https://www.chgsh.chc.edu.tw/">國立彰化女子高級中學</a></li>
+                  <li><a class="dropdown-item" href="#https://www.twjh.chc.edu.tw/">田尾國中</a></li>
+                  <li><a class="dropdown-item" href="#https://www.twps.chc.edu.tw/">田尾國小</a></li>
+                </ul>
+              </div>
+            </header>
+            <p>
+              我高中就讀彰化女中，是一座校風自由且師生互相尊重的高中，在這裡我培育起了我的自信及被身邊同學感染所獲得友愛同儕的熱心腸。而大學我選擇就讀校風純普的國立台北教育大學，在這裡學習到許多異於高中的知識圈，例如撰寫程式等等。
+            </p>
+          
+            <table frame="void">
+                <thead>
+                    <tr>
+                        <th>學習期間</th>
+                        <th>所在單位</th>
+                    </tr>
+                    <tr>
+                        <td>2023-2024</td>
+                        <td>國立台北教育大學</td>
+                    </tr>
+                    <tr>
+                        <td>2019-2022</td>
+                        <td>國立彰化女子高級中學</td>
+                    </tr>
+                    <tr>
+                        <td>2015-2018</td>
+                        <td>田尾國中</td>
+                    </tr>
+                </thead>
+            </table>
+        </article>
+        <br>
+        <!-- 我的技能 -->
+        <article id="section4">
+            <header>
+                <h2> • 我的技能</h2>
+            </header>
+                <table frame="void">
+                    <thead>
+                        <tr>
+                            <td>排球</td>
+                            <td>⭐⭐⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Java</td>
+                            <td>⭐⭐</td>
+                        </tr>
+                        <tr>
+                            <td>Html</td>
+                            <td>⭐</td>
+                        </tr>
+                        <tr>
+                            <td>C++</td>
+                            <td>⭐⭐⭐</td>
+                        </tr>
+                    </thead>
+                </table>
+        </article>
+        <br>
+        <!-- 影片作品 -->
+        <article id="section5">
+          <header>
+            <h2> • 影片分享</h2>
+          </header>
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/eA0lHNZ1KCA?si=Uvw2W0HoJaE_7_QL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>這是我很喜歡的歌曲，想和大家分享。</p>
+        </article>        
+        
 
     </main>
     <!-- 頁尾 -->
